@@ -1,6 +1,7 @@
 
 import { Home, Settings } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 import {
   Sidebar,
   SidebarContent,
@@ -12,27 +13,28 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 
-const menuItems = [
-  {
-    title: "หน้าหลัก",
-    path: "/",
-    icon: Home,
-  },
-  {
-    title: "ตั้งค่า",
-    path: "/settings",
-    icon: Settings,
-  }
-];
-
 export function AppSidebar() {
   const location = useLocation();
+  const { t } = useLanguage();
+
+  const menuItems = [
+    {
+      title: t('home'),
+      path: "/",
+      icon: Home,
+    },
+    {
+      title: t('settings'),
+      path: "/settings",
+      icon: Settings,
+    }
+  ];
 
   return (
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>เมนู</SidebarGroupLabel>
+          <SidebarGroupLabel>{t('menu')}</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (
@@ -54,5 +56,5 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  )
+  );
 }
