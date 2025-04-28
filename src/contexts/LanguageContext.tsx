@@ -17,7 +17,12 @@ const translations = {
     "general_settings": "การตั้งค่าทั่วไป",
     "general_settings_desc": "ตั้งค่าการใช้งานทั่วไปของแอพพลิเคชั่น",
     "language": "ภาษา",
-    "choose_language": "เลือกภาษา"
+    "choose_language": "เลือกภาษา",
+    "market_overview": "ภาพรวมตลาด",
+    "top_performers": "หุ้นที่มีประสิทธิภาพสูงสุด",
+    "market_activity": "กิจกรรมตลาด",
+    "last_updated": "อัพเดทล่าสุด",
+    "search_stock": "ค้นหาหุ้น..."
   },
   en: {
     "home": "Home",
@@ -26,7 +31,12 @@ const translations = {
     "general_settings": "General Settings",
     "general_settings_desc": "Configure general application settings",
     "language": "Language",
-    "choose_language": "Choose Language"
+    "choose_language": "Choose Language",
+    "market_overview": "Market Overview",
+    "top_performers": "Top Performers",
+    "market_activity": "Market Activity",
+    "last_updated": "Last updated",
+    "search_stock": "Search for a stock..."
   }
 };
 
